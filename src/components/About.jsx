@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../assets/about.jpg";
+import about from "../assets/About.jpg";
 import { motion } from "framer-motion"
 import { ABOUT_TEXT } from "./Constants/Constant";
 

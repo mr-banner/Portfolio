@@ -1,7 +1,7 @@
 import React from 'react'
 import { HERO_CONTENT } from './Constants/Constant'
 import { motion } from "framer-motion"
-import profilePic from "../assets/profile_pic.png"
+import profilePic from "../assets/ProfilePic.png"
 
 const container = (delay)=>({
   hidden: {x: -100, opacity:0},
@@ -14,7 +14,7 @@ const container = (delay)=>({
 function Hero() {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <div className='flex flex-wrap'>
+      <div className='flex flex-wrap max-sm:flex-col-reverse'>
         <div className='w-full lg:w-1/2'>
           <div className='flex flex-col lg:items-start '>
               <motion.h1 
@@ -41,7 +41,7 @@ function Hero() {
               initial={{x:100,opacity:0}}
               animate={{x:0, opacity:1}}
               transition={{duration:1.2,delay:1.1}}
-              src={profilePic} alt="Kamal Kant" className='w-11/12 lg:w-4/6  lg:h-auto rounded-lg'/>
+              src={profilePic} alt="Kamal Kant" className='w-4/5 lg:w-3/6  lg:h-auto max-sm:mb-10'/>
             </div>
         </div>
       </div>

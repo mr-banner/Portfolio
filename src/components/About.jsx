@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../assets/profile_pic.png";
+import about from "../assets/about.jpg";
 import { motion } from "framer-motion"
 import { ABOUT_TEXT } from "./Constants/Constant";
 
@@ -25,7 +25,7 @@ function About() {
             <img
               src={about}
               alt="About Image"
-              className="w-3/4 lg:w-2/4  lg:h-auto rounded-lg"
+              className="w-3/4 lg:w-2/4  lg:h-auto rounded-2xl"
             />
           </motion.div>
         </div>
@@ -35,7 +35,7 @@ function About() {
             initial={{x:100,opacity:0}}
             transition={{duration:0.7 , delay:0.5}}
             className="flex flex-col lg:items-start">
-                <p className='mb-3 max-w-xl lg:py-16 py-8 font-light tracking-tight'> {ABOUT_TEXT}</p>
+                <p className='mb-3 max-w-xl lg:py-12 py-8 font-light tracking-tight'> {ABOUT_TEXT}</p>
             </motion.div>
           </div>
       </div>

@@ -9,7 +9,7 @@ function Project() {
       ${theme === "light" ? " border-[#CDC1FF]" : "border-neutral-900"}
       `}>
       <motion.h1 
-      whileInView={{y:0,opacity:1}}
+      animate={{y:0,opacity:1}}
       initial={{y:-100,opacity:0}}
       transition={{duration:0.5, delay:0.7}}
       className={`lg:my-20 my-16 text-center text-4xl
@@ -31,7 +31,7 @@ function Project() {
                 transition={{duration:0.5,delay:0.7}}
                 className='w-full max-w-xl lg:w-3/4 '>
                     <h6 className={`mb-2 font-semibold text-neutral-100
-                      ${theme === "light" ? "text-[#A594F9]" : " text-neutral-200 "}
+                      ${theme === "light" ? "text-[#5e3ff8]" : "text-neutral-200 "}
                       `}>{project.title}</h6>
                     <p className={`text-neutral-400 text-base mb-4
                       ${theme === "light" ? "text-neutral-900" : "text-neutral-400 "}

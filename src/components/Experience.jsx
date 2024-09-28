@@ -61,8 +61,8 @@ function Experience() {
                 <span
                   key={index}
                   className={`mr-3 text-sm mt-4 rounded bg-neutral-900
-                         text-purple-500 px-2 py-1 font-medium
-                         ${theme === "light" ? "bg-white text-[#A594F9] shadow-lg" : "bg-neutral-900 text-neutral-400"}
+                          px-2 py-1 font-medium
+                         ${theme === "light" ? "bg-white text-[#A594F9] shadow-lg" : "bg-neutral-900 text-purple-500"}
                          ` }
                 >
                   {tech}

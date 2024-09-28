@@ -5,19 +5,28 @@ import { MdLightMode } from "react-icons/md";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { MdDarkMode } from "react-icons/md";
 import { motion } from "framer-motion"
+import { useTheme } from "../context/ThemeContext";
 
 function Navbar() {
-  const [theme, setTheme] = React.useState("dark");
-
+  const {theme,darkMode,lightMode} = useTheme()
   const handleClick = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    if(theme === "light"){
+      darkMode()
+
+    }else{
+      lightMode()
+    }
   };
+
+  
   return (
-    <nav className="flex justify-between items-center lg:mb-20 mb-10 pt-2 lg:pb-6">
+    <nav className="flex justify-between items-center light:bg-white lg:mb-20 mb-10 pt-2 lg:pb-6">
       <div className="flex flex-shrink-0 items-center">
         <img src={logo} alt="Profile Logo" className="mx-2 w-36" />
       </div>
-      <div className="m-8 flex mx-2 gap-4 items-center justify-center text-2xl">
+      <div className={`m-8 flex mx-2 gap-4 items-center justify-center text-2xl
+        ${theme === "light" ? "text-[#000000]" : "text-[#FFF]"}
+        `}>
         <motion.button 
         initial={{x:0,opacity:1}}
         animate={{x:0,opacity:1}}

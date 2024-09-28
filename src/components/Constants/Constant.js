@@ -29,7 +29,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
     {
-      title: "Local Meet A video conferencing platform",
+      title: "Local Meet : A video conferencing platform",
       image: project1,
       description:
         "developed a online video conferencing platform using webRTC technology, having features like peer-to-peer communication and group communication also have the screen sharing and host control facilities.",

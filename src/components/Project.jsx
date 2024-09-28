@@ -31,7 +31,7 @@ function Project() {
                 transition={{duration:0.5,delay:0.7}}
                 className='w-full max-w-xl lg:w-3/4 '>
                     <h6 className={`mb-2 font-semibold
-                      ${theme === "light" ? "text-[#5e3ff8]" : "text-neutral-200 "}
+                      ${theme === "light" ? "text-[#A594F9]" : "text-neutral-200 "}
                       `}>{project.title}</h6>
                     <p className={`text-neutral-400 text-base mb-4
                       ${theme === "light" ? "text-neutral-900" : "text-neutral-400 "}
@@ -39,7 +39,7 @@ function Project() {
                     {project.technologies.map((tech,index)=>(
                         <span key={index} className={`mr-2 text-sm mt-4 rounded bg-neutral-900
                           text-purple-500 px-2 py-1 font-medium
-                          ${theme === "light" ? "bg-white text-[#A594F9] shadow-" : "bg-neutral-900 text-neutral-400"}
+                          ${theme === "light" ? "bg-white text-[#A594F9] shadow-lg" : "bg-neutral-900 text-neutral-400"}
                           ` }>{tech}</span>
                     ))}
                 </motion.div>

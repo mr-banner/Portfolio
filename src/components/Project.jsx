@@ -30,7 +30,7 @@ function Project() {
                 initial={{y:-100,opacity:0}}
                 transition={{duration:0.5,delay:0.7}}
                 className='w-full max-w-xl lg:w-3/4 '>
-                    <h6 className={`mb-2 font-semibold text-neutral-100
+                    <h6 className={`mb-2 font-semibold
                       ${theme === "light" ? "text-[#5e3ff8]" : "text-neutral-200 "}
                       `}>{project.title}</h6>
                     <p className={`text-neutral-400 text-base mb-4

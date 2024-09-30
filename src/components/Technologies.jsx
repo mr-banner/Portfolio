@@ -35,7 +35,7 @@ function Technologies() {
       className={`lg:my-20 my-16 text-center text-4xl
         ${theme === "light" ? "text-[#5e3ff8]" : "text-[#FFF]"}
       `}>Technical
-        <span className={`ml-3 text-neutral-500 ${theme === "light" ? "text-[#A594F9]" : " text-neutral-500 "}`}>Skills</span>
+        <span className={`ml-3 ${theme === "light" ? "text-[#A594F9]" : " text-neutral-500 "}`}>Skills</span>
       </motion.h1>
 
       <motion.div

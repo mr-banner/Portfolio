@@ -1,61 +1,66 @@
-import project1 from "../../assets/videoconf.png"
-import project2 from "../../assets/todo.png"
-import project3 from "../../assets/portfolio.jpg"
-import project4 from "../../assets/blog.jpeg"
+import localmeet from "../../assets/local_meet.png"
+import budgetbrain from "../../assets/budget_brain.png"
+import quickpick from "../../assets/quick_pick.png"
+import afrovids from "../../assets/afro_vids.png"
 
-export const HERO_CONTENT = `I am a frontend developer with 1 year of experience in JavaScript, Java, React.js, Tailwind CSS, and Redux Toolkit, focused on building scalable web applications that enhance user experiences and drive business growth.`;
+export const HERO_CONTENT = `I am a passionate software developer with experience in building modern, scalable, and user-friendly web applications using React.js, JavaScript, Node.js, Express.js and Tailwind CSS. I focus on writing clean, maintainable code and delivering high-performance solutions that enhance user experience and solve real-world problems.`;
 
-export const ABOUT_TEXT = `I am a versatile frontend developer with 1 year of experience in React, Node.js, MySQL, and MongoDB. I excel in collaborative settings, solving complex problems, and contributing to open-source projects. Outside of coding, I stay active and explore new technologies. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a versatile developer with hands-on experience in both frontend and backend technologies including React, Node.js, MongoDB, and MySQL. I enjoy solving complex problems, learning new technologies, and collaborating with teams to build meaningful digital products. I believe in continuous learning and strive to write efficient, scalable, and well-structured code. Outside of coding, I explore new tools, contribute to open-source projects, and keep upgrading my technical skills.`;
 
 export const EXPERIENCES = [
-    {
-      year: "08/07/2024 - Present",
-      role: "Frontend Developer Intern",
-      company: "Cybervie Pvt.Ltd",
-      description: `Played a key role in designing and implementing user interfaces, focusing on creating responsive, user-friendly designs. 
-                    Led the creation of an assessment section for modules, allowing for seamless integration and management of various assessments.
-                    Integrated OTP verification during student registration using Firebase, enhancing security and user experience.
-                    Worked closely with cross-functional teams, following Agile methodologies to ensure timely delivery of features.`,
-      technologies: ["Javascript", "React", "MaterialUI", "Redux"],
-    },
-    {
-      year: "01/2023 - 02/2023",
-      role: "Frontend Intern",
-      company: "OASIS INFOBYTE",
-      description: `Designed and developed user interfaces for web applications using React. Created a E-commerce website which is responsive for all media devices.`,
-      technologies: ["HTML", "CSS", "JavaScript", "React"]
-    },
+  {
+    year: "08/07/2024 - Present",
+    role: "Frontend Developer Intern",
+    company: "Cybervie Pvt.Ltd",
+    description: `Played a key role in designing and implementing user interfaces, focusing on creating responsive and user-friendly designs. 
+                  Led the development of an assessment module for seamless management of student evaluations. 
+                  Integrated OTP verification using Firebase to enhance security and authentication. 
+                  Collaborated with cross-functional teams in an Agile environment to deliver high-quality features on time.`,
+    technologies: ["JavaScript", "React", "MaterialUI", "Redux"],
+  },
+  {
+    year: "01/2023 - 02/2023",
+    role: "Frontend Intern",
+    company: "OASIS INFOBYTE",
+    description: `Designed and developed responsive user interfaces using React. Built a fully responsive e-commerce website with modern UI practices and optimized performance.`,
+    technologies: ["HTML", "CSS", "JavaScript", "React"]
+  },
 ];
 
 export const PROJECTS = [
-    {
-      title: "Local Meet : A video conferencing platform",
-      image: project1,
-      description:
-        "developed a online video conferencing platform using webRTC technology, having features like peer-to-peer communication and group communication also have the screen sharing and host control facilities.",
-      technologies: ["React.js", "Node.js", "MongoDB","Javascript"],
-    },
-    {
-      title: "Todo App",
-      image: project2,
-      description:
-        "An application for managing tasks, with features such as task creation, deletion, updation and progress tracking.",
-      technologies: ["React","Redux-toolkit","Tailwind"],
-    },
-    {
-      title: "Portfolio Website",
-      image: project3,
-      description:
-        "A personal portfolio website showcasing projects, skills, and contact information.",
-      technologies: ["React","Tailwind","Redux","Git"]
-    },
-    {
-      title: "Blogging Platform",
-      image: project4,
-      description:
-        "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-      technologies: ["React","Redux","Appwrite","Tailwind"]
-    },
-  ];
-
+  {
+    title: "Local Meet : Video Conferencing Platform",
+    image: localmeet,
+    description:
+      "Developed an online video conferencing platform using WebRTC technology with peer-to-peer and group communication features. Implemented screen sharing, real-time chat, and host control functionalities.",
+    technologies: ["React.js", "Node.js", "MongoDB", "WebRTC"],
+    github: "https://github.com/mr-banner/LocalMeet",
+    live: "https://local-meet.vercel.app"
+  },
+  {
+    title: "Budget Brain",
+    image: budgetbrain,
+    description:
+      "A personal finance management application that helps users track expenses, manage budgets, and analyze spending patterns with interactive visual reports.",
+    technologies: ["React", "Redux Toolkit", "Tailwind CSS", "Firebase"],
+    github: "https://github.com/mr-banner/Budget_Brain",
+    live: "https://budget-brain-mauve.vercel.app/"
+  },
+  {
+    title: "Quick Pick",
+    image: quickpick,
+    description:
+      "A product selection and ordering platform with dynamic filtering, category management, and a smooth user-friendly interface for quick and efficient browsing.",
+    technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+    github: "https://github.com/mr-banner/Quickpick-E-commerce",
+    live: "https://quickpick-e-commerce.vercel.app/"
+  },
+  {
+    title: "Afrovids – Freelance Project",
+    image: afrovids,
+    description:
+      "An AI-powered video creation and editing platform that allows users to generate, customize, and enhance videos using artificial intelligence. Features include AI-based video generation, smart editing tools, automated effects, and seamless content customization for creators.",
+    technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "AI APIs"],
+  }
+];
 

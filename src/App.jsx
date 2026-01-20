@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import React from "react";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -8,10 +8,11 @@ import Project from "./components/Project";
 import Technologies from "./components/Technologies";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./context/ThemeContext";
+import Contact from "./components/Contact";
 
 function App() {
   document.title = "Portfolio"
-  const [theme,setTheme] = React.useState("dark");
+  const [theme,setTheme] = React.useState("light");
   const darkMode = () => {
     setTheme("dark");
   }
@@ -27,7 +28,7 @@ function App() {
   return (
     <ThemeProvider value = {{theme,darkMode,lightMode}}>
     <div className={`overflow-x-hidden text-neutral-100 antialiased ${
-          theme === "light" ? "bg-[#E2E9ED]" : "bg-neutral-950"
+          theme === "light" ? "bg-[#E2E9ED]" : "bg-slate-950"
         }`}>
       <div className="fixed top-0 -z-10 h-full w-full">
       <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
@@ -39,6 +40,7 @@ function App() {
         <Technologies/>
         <Experience/>
         <Project/>
+        <Contact/>
         <Footer/>
       </div>
     </div>

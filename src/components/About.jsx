@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
-import about from "../assets/About.jpg";
+import { useRef } from "react";
+import about from "../assets/About.png";
 import { motion, useInView } from "framer-motion";
 import { ABOUT_TEXT } from "./Constants/Constant";
 import { useTheme } from "../context/ThemeContext";
+import resume from "../assets/resume.pdf"
 
 function About() {
   const { theme } = useTheme();
@@ -60,7 +61,7 @@ function About() {
             className="flex flex-col lg:items-start"
           >
             <p
-              className={`mb-3 max-w-xl lg:py-12 py-8 font-light tracking-tight ${
+              className={`mb-3 max-w-xl lg:py-12 py-8 font-light text-[16px] tracking-tight ${
                 theme === "light"
                   ? "text-neutral-900 font-[300]"
                   : "text-[#FFF]"
@@ -68,6 +69,13 @@ function About() {
             >
               {ABOUT_TEXT}
             </p>
+            <a
+              href={resume}
+              download = "Kamal_Kant_Sahu_Resume.pdf"
+              className={`border-2 rounded-full p-3 max-sm:w-[50%] font-medium sm:text-[16px] text-sm  text-center mb-4 transition-all ease-in-out duration-500 ${theme === "light" ? "border-neutral-900 text-neutral-900 hover:shadow-gray-500 hover:shadow-2xl" : "border-neutral-50 text-white hover:shadow-gray-500 shadow-xl"}`}
+            >
+              Download CV
+            </a>
           </motion.div>
         </div>
       </div>

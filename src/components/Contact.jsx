@@ -107,7 +107,7 @@ function Contact() {
                 theme === "light" ? "text-black" : "text-white"
               }`}
             />
-            <span>yourmail@gmail.com</span>
+            <span>sahukamalkant28@gmail.com</span>
           </div>
 
           <div className="flex items-center gap-3 mb-4">
@@ -116,7 +116,7 @@ function Contact() {
                 theme === "light" ? "text-black" : "text-white"
               }`}
             />
-            <span>+91 9876543210</span>
+            <span>+91 7077655797</span>
           </div>
 
           <div className="flex items-center gap-3">
@@ -125,7 +125,7 @@ function Contact() {
                 theme === "light" ? "text-black" : "text-white"
               }`}
             />
-            <span>India</span>
+            <span>Bangaore, India</span>
           </div>
         </motion.div>
 
